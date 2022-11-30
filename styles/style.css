@@ -129,6 +129,71 @@ header {
     width: 100%;
 }
 
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.link-container {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--dark-violet);
+    border-radius: 12px;
+}
+
+.link-text-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.link-text {
+    width: 100%;
+    height: 55px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.error-msg {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -25px;
+    font-size: 15px;
+    color: var(--red);
+}
+
+.error {
+    border: 2px solid var(--red);
+}
+
+.error::placeholder {
+    color: var(--red);
+}
+
+.link-submit {
+    width: 17%;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--cyan);
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+.link-submit:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
 /*Media screen for tablet*/
 
 @media screen and (max-width: 1030px) {
